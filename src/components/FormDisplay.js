@@ -1,7 +1,8 @@
+import "./FormDisplay.css";
 import React from "react";
 import FormData from "./FormData";
 import Icons from "./Icons";
-import "./FormDisplay.css";
+import ButtonList from "./ButtonList";
 
 class Form extends React.Component {
   state = { question: "", subQuestion: "", choices: [], icon: "" };
@@ -28,6 +29,7 @@ class Form extends React.Component {
         <Icons iconName={this.state.icon} />
         <h3 className="question">{this.state.question}</h3>
         <h4 className="sub-question">{this.statesubQuestion}</h4>
+        <ButtonList choices={this.state.choices} />
       </div>
     );
   }

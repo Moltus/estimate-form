@@ -1,0 +1,28 @@
+.buttons-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 15px;
+  width: 90vw;
+  max-width: 1000px;
+}
+
+/* When number of buttons is > 4 min width is 150. Especially useful for mobile display where they wouldnt fit on 1 screen */
+.buttons-container.small-buttons {
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+}
+
+.button {
+  cursor: pointer;
+  background-color: transparent;
+  width: 100%;
+  color: #fff;
+  font-size: 1.3rem;
+  padding: 15px;
+  border: 2px solid #70B0FF;
+  border-radius: 8px;
+}
+
+.button:hover {
+  border-color: #FFC357;
+  color: #FFC357;
+}

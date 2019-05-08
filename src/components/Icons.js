@@ -7,7 +7,7 @@ const Icons = props => {
   return (
     <div className="icon-container">
       <img
-        class="question-icon"
+        className="question-icon"
         src={getIconURL(props.iconName)}
         alt={props.iconName}
       />
