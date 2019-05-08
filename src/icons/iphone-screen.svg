@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.44 27.69">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #142c49;
+      }
+
+      .cls-2 {
+        stroke: #436a99;
+      }
+
+      .cls-2, .cls-3 {
+        stroke-miterlimit: 10;
+        stroke-width: 0.25px;
+      }
+
+      .cls-3 {
+        fill: #b37c19;
+        stroke: #ffc357;
+      }
+    </style>
+  </defs>
+  <title>iphone-screen</title>
+  <g id="background">
+    <rect class="cls-1" y="0.13" width="27.44" height="27.44"/>
+  </g>
+  <g id="iphone">
+    <path id="case" class="cls-2" d="M19.49,0H8A2,2,0,0,0,6,2V25.44a2,2,0,0,0,2,2H19.49a2,2,0,0,0,2-2V2A2,2,0,0,0,19.49,0ZM20,21.1" transform="translate(0 0.13)"/>
+    <rect id="screen" class="cls-3" x="7.45" y="3.5" width="12.55" height="17.73"/>
+    <path id="button" class="cls-2" d="M13.72,25.47A1.28,1.28,0,1,1,15,24.19,1.27,1.27,0,0,1,13.72,25.47Z" transform="translate(0 0.13)"/>
+    <path id="speaker" class="cls-2" d="M10.87,1.21h5.7c.15,0,.26.22.26.48s-.11.49-.26.49h-5.7c-.14,0-.26-.22-.26-.48S10.73,1.21,10.87,1.21Z" transform="translate(0 0.13)"/>
+  </g>
+</svg>

@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.44 27.69">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #142c49;
+      }
+
+      .cls-2 {
+        stroke: #436a99;
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        stroke-miterlimit: 10;
+        stroke-width: 0.25px;
+      }
+
+      .cls-3 {
+        fill: #436a99;
+        stroke: #70b0ff;
+      }
+
+      .cls-4 {
+        fill: #b37c19;
+        stroke: #ffc357;
+      }
+    </style>
+  </defs>
+  <title>iphone-capacity</title>
+  <g id="background">
+    <rect class="cls-1" y="0.13" width="27.44" height="27.44"/>
+  </g>
+  <g id="iphone">
+    <path class="cls-2" d="M6.45,23.22a1,1,0,0,1-1-1V5.45a1,1,0,0,1,1-1H17.73V2a2,2,0,0,0-2-2H4.19a2,2,0,0,0-2,2V25.44a2,2,0,0,0,2,2H15.74a2,2,0,0,0,2-2V23.22Z" transform="translate(0 0.13)"/>
+  </g>
+  <g id="Layer_3" data-name="Layer 3">
+    <rect class="cls-3" x="6.52" y="5.66" width="16.61" height="4.7" rx="0.66"/>
+    <rect class="cls-4" x="6.52" y="11.5" width="14.05" height="4.7" rx="0.66"/>
+    <rect class="cls-3" x="6.52" y="17.46" width="11.21" height="4.7" rx="0.66"/>
+  </g>
+</svg>

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.44 27.44">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #142c49;
+      }
+
+      .cls-2 {
+        fill: #70b0ff;
+      }
+
+      .cls-3 {
+        fill: none;
+        stroke: #70b0ff;
+        stroke-miterlimit: 10;
+        stroke-width: 1.5px;
+      }
+    </style>
+  </defs>
+  <title>backwards</title>
+  <g id="background">
+    <rect class="cls-1" width="27.44" height="27.44"/>
+  </g>
+  <g id="arrow">
+    <g id="surface1">
+      <path class="cls-2" d="M12.18,14.94h7.66a.92.92,0,0,0,0-1.83H12.18V8.54L6.69,14l5.49,5.48Z"/>
+    </g>
+    <circle class="cls-3" cx="13.72" cy="14.03" r="11.3"/>
+  </g>
+</svg>
