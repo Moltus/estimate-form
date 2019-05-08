@@ -1,12 +1,16 @@
 import React from "react";
 
 const getIconURL = iconName => {
-  return `../icons/${iconName}.svg`;
+  return `/icons/${iconName}.svg`;
 };
 const Icons = props => {
   return (
     <div className="icon-container">
-      <img src={getIconURL(props.icon)} alt={props.icon} />
+      <img
+        class="question-icon"
+        src={getIconURL(props.iconName)}
+        alt={props.iconName}
+      />
     </div>
   );
 };

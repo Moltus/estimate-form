@@ -6,17 +6,24 @@
       }
 
       .cls-2 {
-        stroke: #436a99;
+        stroke: #70b0ff;
       }
 
-      .cls-2, .cls-3 {
+      .cls-2, .cls-3, .cls-4 {
         stroke-miterlimit: 10;
         stroke-width: 0.15px;
       }
 
       .cls-3 {
         fill: #b37c19;
+      }
+
+      .cls-3, .cls-4 {
         stroke: #ffc357;
+      }
+
+      .cls-4 {
+        fill: #436a99;
       }
     </style>
   </defs>
@@ -44,9 +51,9 @@
   </g>
   <g id="iphone5">
     <path id="case-4" data-name="case" class="cls-3" d="M16.44,14H11a.94.94,0,0,0-.94.94V26a.94.94,0,0,0,.94.94h5.44a1,1,0,0,0,.95-.94V14.92A1,1,0,0,0,16.44,14Zm.24,10"/>
-    <rect id="screen-4" data-name="screen" class="cls-3" x="10.76" y="15.57" width="5.92" height="8.36"/>
-    <path id="button-4" data-name="button" class="cls-3" d="M13.72,26a.6.6,0,1,1,.6-.6A.6.6,0,0,1,13.72,26Z"/>
-    <path id="speaker-4" data-name="speaker" class="cls-3" d="M12.38,14.55h2.69c.06,0,.12.1.12.23s-.06.22-.12.22H12.38c-.07,0-.13-.1-.13-.22S12.31,14.55,12.38,14.55Z"/>
+    <rect id="screen-4" data-name="screen" class="cls-4" x="10.76" y="15.57" width="5.92" height="8.36"/>
+    <path id="button-4" data-name="button" class="cls-4" d="M13.72,26a.6.6,0,1,1,.6-.6A.6.6,0,0,1,13.72,26Z"/>
+    <path id="speaker-4" data-name="speaker" class="cls-4" d="M12.38,14.55h2.69c.06,0,.12.1.12.23s-.06.22-.12.22H12.38c-.07,0-.13-.1-.13-.22S12.31,14.55,12.38,14.55Z"/>
   </g>
   <g id="iphone2">
     <path id="case-5" data-name="case" class="cls-2" d="M16.44.52H11a.94.94,0,0,0-.94.94V12.52a1,1,0,0,0,.94,1h5.44a1,1,0,0,0,.95-1V1.46A1,1,0,0,0,16.44.52Zm.24,10"/>

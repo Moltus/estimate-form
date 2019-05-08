@@ -2,10 +2,10 @@ import React from "react";
 import FormDisplay from "./FormDisplay";
 
 class App extends React.Component {
-  state = { step: 1 };
+  state = { currentStep: 1 };
 
   render() {
-    return <FormDisplay step={this.state.step} />;
+    return <FormDisplay step={this.state.currentStep} />;
   }
 }
 
