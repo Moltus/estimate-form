@@ -1,11 +1,11 @@
 import React from "react";
-import Form from "./Form";
+import FormDisplay from "./FormDisplay";
 
 class App extends React.Component {
-  state = {};
+  state = { step: 1 };
 
   render() {
-    return <Form />;
+    return <FormDisplay step={this.state.step} />;
   }
 }
 

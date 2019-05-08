@@ -1,6 +1,4 @@
-import React from "react";
-
-const formConfig = {
+const FormData = {
   step1: {
     id: 1,
     question: "Quel est le modèle de votre Iphone ?",
@@ -93,11 +91,4 @@ const formConfig = {
   }
 };
 
-class Form extends React.Component {
-  state = {};
-
-  render() {
-    return <div>Bonjour</div>;
-  }
-}
-export default Form;
+export default FormData;
