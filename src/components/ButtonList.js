@@ -7,10 +7,13 @@ class ButtonList extends React.Component {
   };
 
   getButtons() {
-    const containerClass =
-      this.props.choices.length > 4
-        ? "buttons-container small-buttons"
-        : "buttons-container";
+    let containerClass = "buttons-container";
+
+    if (this.props.choices.length > 4) {
+      containerClass += " small-buttons";
+    } else if (this.props.choices.length === 1) {
+      containerClass += " one-button";
+    }
 
     const buttons = this.props.choices.map(({ id, button, info }) => {
       return (
