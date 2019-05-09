@@ -6,13 +6,15 @@ import ButtonList from "./ButtonList";
 
 class Form extends React.Component {
   state = { question: "", subQuestion: "", choices: [], icon: "" };
+  animation = "";
 
   componentDidMount() {
-    this.getCurrentStep();
+    this.getNextStep();
   }
-  getCurrentStep() {
+  getNextStep() {
     const data = FormData["step" + this.props.step];
-    console.log(data);
+    this.animation = "slide-left-in";
+
     this.setState({
       question: data.question,
       subQuestion: data.subQuestion ? data.subQuestion : "",
@@ -21,15 +23,23 @@ class Form extends React.Component {
     });
   }
 
+  getAnswer = choice => {
+    this.props.onButtonClick(choice);
+    this.animation = "slide-left-out";
+    setTimeout(() => {
+      this.getNextStep();
+    }, 750);
+  };
+
   render() {
     console.log(this.state);
 
     return (
-      <div className="form-container">
+      <div id="form-container" className={"form-container " + this.animation}>
         <Icons iconName={this.state.icon} />
         <h3 className="question">{this.state.question}</h3>
         <h4 className="sub-question">{this.statesubQuestion}</h4>
-        <ButtonList choices={this.state.choices} />
+        <ButtonList choices={this.state.choices} getAnswer={this.getAnswer} />
       </div>
     );
   }

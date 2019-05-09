@@ -6,10 +6,31 @@
   height: 100vh;
 }
 
+.form-container.slide-left-in {
+  animation: slideLeftIn .75s ease-in forwards;
+}
+
+.form-container.slide-left-out {
+  animation: slideLeftOut .75s ease-in forwards;
+}
+
+@keyframes slideLeftIn {
+  from {transform: translateX(100vw);}
+  to {transform: translateX(0);}
+}
+@keyframes slideLeftOut {
+  from {transform: translateX(0);}
+  to {transform: translateX(-100vw);}
+}
+
 .question-icon {
   width: 150px;
 }
 
 .question {
   font-weight: 300;
+}
+
+.button-and-info p {
+  text-align: center;
 }

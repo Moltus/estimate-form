@@ -45,7 +45,8 @@ const FormData = {
         button: "100%",
         info: "Fonctionne parfaitement, aucun dommage liquide"
       }
-    ]
+    ],
+    icon: "iphone-functional"
   },
   step4: {
     id: 4,
@@ -63,7 +64,8 @@ const FormData = {
         info: "Micro-rayure ou rayure superficielle"
       },
       { id: "4c", button: "Comme neuf", info: "Intact, aucune marque d'usure" }
-    ]
+    ],
+    icon: "iphone-screen"
   },
   step5: {
     id: 5,
@@ -80,14 +82,16 @@ const FormData = {
         info: "Micro-rayure ou rayure superficielle"
       },
       { id: "5c", button: "Comme neuve", info: "Intact, aucune marque d'usure" }
-    ]
+    ],
+    icon: "iphone-case"
   },
   step6: {
     id: 6,
     question: "Important :",
     subQuestion:
       "Il est obligatoire de déconnecter votre compte iCloud avant de nous revendre votre iPhone.",
-    choices: [{ id: "6a", button: "C'est compris !", info: "" }]
+    choices: [{ id: "6a", button: "C'est compris !", info: "" }],
+    icon: "cloud-disconnect"
   }
 };
 
