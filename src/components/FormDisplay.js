@@ -28,7 +28,7 @@ class Form extends React.Component {
     this.animation = "slide-left-out";
     setTimeout(() => {
       this.getNextStep();
-    }, 750);
+    }, 500);
   };
 
   render() {

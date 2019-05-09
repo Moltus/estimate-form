@@ -7,11 +7,11 @@
 }
 
 .form-container.slide-left-in {
-  animation: slideLeftIn .75s ease-in forwards;
+  animation: slideLeftIn .5s ease-out forwards;
 }
 
 .form-container.slide-left-out {
-  animation: slideLeftOut .75s ease-in forwards;
+  animation: slideLeftOut .5s ease-in forwards;
 }
 
 @keyframes slideLeftIn {

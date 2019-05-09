@@ -1,7 +1,7 @@
 import React from "react";
 
 const getIconURL = iconName => {
-  return `/icons/${iconName}.svg`;
+  return `./icons/${iconName}.svg`;
 };
 const Icons = props => {
   return (
