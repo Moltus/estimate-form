@@ -1,0 +1,55 @@
+.progress {
+  position: relative;
+  max-width: 1000px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+.back-button {
+  position: absolute;
+  top: 30px;
+  left: 20px;
+  padding: 9px 10px;
+  cursor: pointer;
+}
+
+.circular-gauge {
+  position: absolute;
+  top: 30px;
+  left: 20px;
+}
+
+.circular-gauge circle {
+  stroke-width: 2px;
+  stroke: #436A99;
+  fill: transparent;
+}
+
+.circle-arrow circle {
+  fill: transparent;
+  stroke: #70B0FF;
+  stroke-width: 2px;
+}
+
+.circle-arrow path {
+  fill: #fff;
+}
+
+.back-button:hover circle {
+  stroke: #FFC357;
+}
+.back-button:hover path {
+  fill: #FFC357;
+}
+
+@media all and (min-width: 720px) {
+  .progress {
+    height: 300px;
+  }
+  .back-button {
+    top: 100px;
+  }
+  .circular-gauge {
+    top: 100px;
+  }
+}
