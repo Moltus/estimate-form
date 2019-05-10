@@ -13,13 +13,32 @@
   animation: slideLeftOut .5s ease-in forwards;
 }
 
+.form-container.slide-right-in {
+  animation: slideRightIn .5s ease-out forwards;
+}
+
+.form-container.slide-right-out {
+  animation: slideRightOut .5s ease-in forwards;
+}
+
 @keyframes slideLeftIn {
   from {transform: translateX(100vw);}
   to {transform: translateX(0);}
 }
+
 @keyframes slideLeftOut {
   from {transform: translateX(0);}
   to {transform: translateX(-100vw);}
+}
+
+@keyframes slideRightIn {
+  from {transform: translateX(-100vw);}
+  to {transform: translateX(0);}
+}
+
+@keyframes slideRightOut {
+  from {transform: translateX(0);}
+  to {transform: translateX(100vw);}
 }
 
 .question-icon {

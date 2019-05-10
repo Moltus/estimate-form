@@ -34,7 +34,7 @@ class ProgressGauge extends React.Component {
         width="60px"
         height="60px"
         xmlns="http://www.w3.org/2000/svg"
-        onClick={this.onButtonClick}
+        onClick={this.onBackClick}
       >
         <g className="back-button__circle-arrow">
           <path
@@ -52,8 +52,8 @@ class ProgressGauge extends React.Component {
     );
   };
 
-  onButtonClick = () => {
-    this.props.onButtonClick();
+  onBackClick = () => {
+    this.props.onBackClick();
   };
 
   componentDidUpdate() {

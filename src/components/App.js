@@ -1,6 +1,5 @@
 import React from "react";
 import FormDisplay from "./FormDisplay";
-import ProgressGauge from "./ProgressGauge";
 
 class App extends React.Component {
   state = {
@@ -30,13 +29,10 @@ class App extends React.Component {
     console.log(this.state);
     return (
       <div className="estimate-form">
-        <ProgressGauge
-          currentStep={this.state.currentStep}
-          onButtonClick={this.getPreviousStep}
-        />
         <FormDisplay
-          step={this.state.currentStep}
+          currentStep={this.state.currentStep}
           onButtonClick={this.getNextStep}
+          getBack={this.getPreviousStep}
         />
       </div>
     );
