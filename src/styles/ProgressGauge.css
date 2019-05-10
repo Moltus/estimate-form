@@ -34,6 +34,7 @@
   left: 20px;
   padding: 9px 10px;
   cursor: pointer;
+  outline: none;
 }
 
 .back-button__circle {

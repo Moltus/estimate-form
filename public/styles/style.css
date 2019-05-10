@@ -1,7 +1,13 @@
+html {
+  overflow: hidden;
+}
+
 body {
   background-color: #142C49;
+  position: relative;
   font-family: 'Lato', sans-serif;
   overflow: hidden;
+  -webkit-tap-highlight-color: transparent;
   user-select: none;
   margin: 0;
   padding: 0;
