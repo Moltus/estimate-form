@@ -57,7 +57,15 @@ class Form extends React.Component {
         <div id="form-container" className={"form-container " + this.animation}>
           <Icons iconName={this.state.icon} />
           <h3 className="question">{this.state.question}</h3>
-          <h4 className="sub-question">{this.state.subQuestion}</h4>
+          <h4
+            className={
+              this.state.subQuestion == ""
+                ? "sub-question hide"
+                : "sub-question"
+            }
+          >
+            {this.state.subQuestion}
+          </h4>
           <ButtonList choices={this.state.choices} getAnswer={this.getAnswer} />
         </div>
       </div>

@@ -48,6 +48,7 @@
 
 .question {
   font-weight: 300;
+  margin-bottom: 40px;
 }
 
 .sub-question {
@@ -55,6 +56,10 @@
   font-weight: 300;
   margin-top: 0;
   margin-bottom: 40px;
+}
+
+.sub-question.hide {
+  display: none;
 }
 
 .button-and-info p {
