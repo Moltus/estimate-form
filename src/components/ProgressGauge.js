@@ -1,5 +1,5 @@
 import React from "react";
-import "./ProgressGauge.css";
+import "../styles/ProgressGauge.css";
 
 class ProgressGauge extends React.Component {
   circularGauge = () => {

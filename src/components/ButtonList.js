@@ -1,4 +1,4 @@
-import "./ButtonList.css";
+import "../styles/ButtonList.css";
 import React from "react";
 
 class ButtonList extends React.Component {

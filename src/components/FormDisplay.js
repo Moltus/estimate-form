@@ -1,4 +1,4 @@
-import "./FormDisplay.css";
+import "../styles/FormDisplay.css";
 import React from "react";
 import FormData from "./FormData";
 import Icons from "./Icons";

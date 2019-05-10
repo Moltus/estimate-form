@@ -9,6 +9,7 @@
 /* When number of buttons is > 4 min width is 150. Especially useful for mobile display where they wouldnt fit on 1 screen */
 .buttons-container.small-buttons {
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-gap: 5px;
 }
 
 .buttons-container.one-button {

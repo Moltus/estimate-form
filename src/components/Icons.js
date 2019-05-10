@@ -1,4 +1,5 @@
 import React from "react";
+import "../styles/Icons.css";
 
 const getIconURL = iconName => {
   return `./icons/${iconName}.svg`;
