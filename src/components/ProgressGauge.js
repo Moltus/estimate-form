@@ -57,7 +57,6 @@ class ProgressGauge extends React.Component {
   };
 
   componentDidUpdate() {
-    console.log(this.gaugeCircle);
     // element dashoffset make full circle at 760 and empties at 1000
     // one step equals (1000-760)/6 = 40 with 6 being nb of steps
     let newOffset = 1000 - (this.props.currentStep - 1) * 40;

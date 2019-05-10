@@ -12,9 +12,11 @@ class Form extends React.Component {
     this.getNextStep();
   }
   getNextStep() {
-    const data = FormData["step" + this.props.step];
     this.animation = "slide-left-in";
-
+    this.getStepData();
+  }
+  getStepData() {
+    const data = FormData["step" + this.props.step];
     this.setState({
       question: data.question,
       subQuestion: data.subQuestion ? data.subQuestion : "",
