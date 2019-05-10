@@ -8,6 +8,16 @@ class App extends React.Component {
     answers: []
   };
 
+  getPreviousStep = () => {
+    if (this.state.currentStep !== 1) {
+      let updatedAnswers = [...this.state.answers].pop();
+      this.setState({
+        currentStep: this.state.currentStep - 1,
+        answers: updatedAnswers
+      });
+    }
+  };
+
   getNextStep = choice => {
     console.log(choice);
     this.setState({
@@ -20,7 +30,10 @@ class App extends React.Component {
     console.log(this.state);
     return (
       <div className="estimate-form">
-        <ProgressGauge currentStep={this.state.currentStep} />
+        <ProgressGauge
+          currentStep={this.state.currentStep}
+          onButtonClick={this.getPreviousStep}
+        />
         <FormDisplay
           step={this.state.currentStep}
           onButtonClick={this.getNextStep}

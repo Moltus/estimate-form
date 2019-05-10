@@ -5,6 +5,28 @@
   margin: 0 auto;
 }
 
+.circular-gauge {
+  position: absolute;
+  top: 30px;
+  left: 20px;
+}
+
+.circular-gauge__outline {
+  stroke-width: 2px;
+  stroke: #436A99;
+  fill: transparent;
+}
+
+.circular-gauge__progression {
+  stroke-width: 6px;
+  stroke: #70B0FF;
+  fill: transparent;
+  stroke-dasharray: 1000;
+  /* dashoffset make full circle at 760 and empties at 1000 */
+  stroke-dashoffset: 1000;
+  transition: stroke-dashoffset 1s;
+}
+
 .back-button {
   position: absolute;
   top: 30px;
@@ -13,32 +35,20 @@
   cursor: pointer;
 }
 
-.circular-gauge {
-  position: absolute;
-  top: 30px;
-  left: 20px;
-}
-
-.circular-gauge circle {
-  stroke-width: 2px;
-  stroke: #436A99;
-  fill: transparent;
-}
-
-.circle-arrow circle {
+.back-button__circle {
   fill: transparent;
   stroke: #70B0FF;
   stroke-width: 2px;
 }
 
-.circle-arrow path {
+.back-button__arrow {
   fill: #fff;
 }
 
-.back-button:hover circle {
+.back-button:hover .back-button__circle {
   stroke: #FFC357;
 }
-.back-button:hover path {
+.back-button:hover .back-button__arrow {
   fill: #FFC357;
 }
 
