@@ -6,11 +6,10 @@
   max-width: 1000px;
 }
 
-/* When number of buttons is > 4 min width is 150. Especially useful for mobile display where they wouldnt fit on 1 screen */
+/* When number of buttons is > 4, min-width is 150. Especially useful for mobile display where they wouldnt fit on 1 screen */
 .buttons-container.small-buttons {
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  grid-template-rows: repeat(6, 55px);
-  /* grid-gap: 5px; */
+  grid-auto-rows: 55px;
 }
 
 .buttons-container.one-button {

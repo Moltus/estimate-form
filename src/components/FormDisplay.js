@@ -59,7 +59,7 @@ class Form extends React.Component {
           <h3 className="question">{this.state.question}</h3>
           <h4
             className={
-              this.state.subQuestion == ""
+              this.state.subQuestion === ""
                 ? "sub-question hide"
                 : "sub-question"
             }
