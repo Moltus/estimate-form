@@ -9,7 +9,8 @@ class App extends React.Component {
 
   getPreviousStep = () => {
     if (this.state.currentStep !== 1) {
-      let updatedAnswers = [...this.state.answers].pop();
+      let updatedAnswers = [...this.state.answers];
+      updatedAnswers.splice(this.state.answers.length - 1, 1);
       this.setState({
         currentStep: this.state.currentStep - 1,
         answers: updatedAnswers
