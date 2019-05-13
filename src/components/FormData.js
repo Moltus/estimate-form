@@ -92,6 +92,14 @@ const FormData = {
       "Il est obligatoire de déconnecter votre compte iCloud avant de nous revendre votre iPhone.",
     choices: [{ id: "6a", button: "C'est compris !", info: "" }],
     icon: "cloud-disconnect"
+  },
+  step7: {
+    id: 7,
+    question: "Laissez-nous votre email",
+    subQuestion: "Vous recevrez notre proposition sur cette adresse)",
+    input: "steve.wozniak@apple.com",
+    choices: [{ id: "7a", button: "Estimer Mon Produit", info: "" }],
+    icon: "mail"
   }
 };
 

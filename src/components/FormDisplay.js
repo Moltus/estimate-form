@@ -25,6 +25,7 @@ class Form extends React.Component {
     this.setState({
       question: data.question,
       subQuestion: data.subQuestion ? data.subQuestion : "",
+      input: data.input ? "" : undefined,
       choices: data.choices,
       icon: data.icon
     });
@@ -40,11 +41,37 @@ class Form extends React.Component {
   };
 
   getAnswer = choice => {
-    this.props.onButtonClick(choice);
-    this.animation = "slide-left-out";
-    setTimeout(() => {
-      this.getNextStep();
-    }, 500);
+    if (this.props.currentStep !== 7) {
+      this.props.onButtonClick(choice);
+      this.animation = "slide-left-out";
+      setTimeout(() => {
+        this.getNextStep();
+      }, 500);
+    } else {
+      console.log("questionnaire terminé !");
+      this.props.validate(this.state.input);
+    }
+  };
+
+  getSubQuestion = () => {
+    if (this.state.subQuestion !== "") {
+      return <h4 className="sub-question">{this.state.subQuestion}</h4>;
+    }
+  };
+
+  getInputMail = () => {
+    if (this.state.input !== undefined) {
+      return (
+        <input
+          size="22"
+          className="input"
+          type="email"
+          placeholder="steve.wozniak@apple.com"
+          onChange={e => this.setState({ input: e.target.value })}
+          value={this.state.input}
+        />
+      );
+    }
   };
 
   render() {
@@ -57,15 +84,8 @@ class Form extends React.Component {
         <div id="form-container" className={"form-container " + this.animation}>
           <Icons iconName={this.state.icon} />
           <h3 className="question">{this.state.question}</h3>
-          <h4
-            className={
-              this.state.subQuestion === ""
-                ? "sub-question hide"
-                : "sub-question"
-            }
-          >
-            {this.state.subQuestion}
-          </h4>
+          {this.getSubQuestion()}
+          {this.getInputMail()}
           <ButtonList choices={this.state.choices} getAnswer={this.getAnswer} />
         </div>
       </div>

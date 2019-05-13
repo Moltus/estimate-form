@@ -4,7 +4,8 @@ import FormDisplay from "./FormDisplay";
 class App extends React.Component {
   state = {
     currentStep: 1,
-    answers: []
+    answers: [],
+    email: ""
   };
 
   getPreviousStep = () => {
@@ -26,6 +27,13 @@ class App extends React.Component {
     });
   };
 
+  validateForm = email => {
+    this.setState({
+      email: email
+    });
+    console.log(this.state);
+  };
+
   render() {
     console.log(this.state);
     return (
@@ -34,6 +42,7 @@ class App extends React.Component {
           currentStep={this.state.currentStep}
           onButtonClick={this.getNextStep}
           getBack={this.getPreviousStep}
+          validate={this.validateForm}
         />
       </div>
     );

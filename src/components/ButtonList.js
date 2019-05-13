@@ -2,8 +2,8 @@ import "../styles/ButtonList.css";
 import React from "react";
 
 class ButtonList extends React.Component {
-  getAnswer = (event, id) => {
-    this.props.getAnswer(id);
+  getAnswer = (event, button) => {
+    this.props.getAnswer(button);
   };
 
   getButtons() {
@@ -20,7 +20,7 @@ class ButtonList extends React.Component {
         <div key={id} className="button-and-info">
           <button
             className="button"
-            onClick={event => this.getAnswer(event, id)}
+            onClick={event => this.getAnswer(event, button)}
           >
             {button}
           </button>

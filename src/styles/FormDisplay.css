@@ -65,3 +65,12 @@
 .button-and-info p {
   text-align: center;
 }
+
+.input {
+  margin-bottom: 25px;
+  font-size: 1.3rem;
+  padding: 15px;
+  border: 2px solid #70B0FF;
+  border-radius: 8px;
+  outline: none;
+}
