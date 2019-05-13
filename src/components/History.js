@@ -4,7 +4,6 @@ import FormData from "./FormData";
 
 class History extends React.Component {
   onClickedItem = (event, step) => {
-    console.log(event, step);
     this.props.onClickedItem(step);
   };
   getHistory() {

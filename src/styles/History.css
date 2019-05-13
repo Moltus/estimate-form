@@ -24,9 +24,6 @@
     grid-column-gap: 30px;
     grid-row-gap: 10px;
   }
-}
-
-@media all and (min-width: 1300px) {
 
   .history-question {
     font-size: 14px;
