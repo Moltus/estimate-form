@@ -2,8 +2,8 @@
   position: relative;
   top: 10px;
   left: 120px;
-  max-width: 1000px;
-  margin: 0 auto;
+  /* max-width: 1000px;
+  margin: 0 auto; */
 }
 .history {
   position: absolute;
@@ -25,8 +25,7 @@
   .history {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* grid-gap: 12px; */
-    grid-column-gap: 50px;
+    grid-column-gap: 30px;
     grid-row-gap: 10px;
   }
 }

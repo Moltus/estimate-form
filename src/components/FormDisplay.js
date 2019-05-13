@@ -78,17 +78,21 @@ class Form extends React.Component {
   render() {
     return (
       <div>
-        <ProgressGauge
-          onBackClick={this.onBackClick}
-          currentStep={this.props.currentStep}
-        />
-        <History history={this.props.history} />
-        <div id="form-container" className={"form-container " + this.animation}>
-          <Icons iconName={this.state.icon} />
-          <h3 className="question">{this.state.question}</h3>
-          {this.getSubQuestion()}
-          {this.getInputMail()}
-          <ButtonList choices={this.state.choices} getAnswer={this.getAnswer} />
+        <div id="form-container" className="form-container">
+          <div className="progress-container">
+            <ProgressGauge
+              onBackClick={this.onBackClick}
+              currentStep={this.props.currentStep}
+            />
+            <History history={this.props.history} />
+          </div>
+          <div className={"questions-container " + this.animation}>
+            <Icons iconName={this.state.icon} />
+            <h3 className="question">{this.state.question}</h3>
+            {this.getSubQuestion()}
+            {this.getInputMail()}
+            <ButtonList choices={this.state.choices} getAnswer={this.getAnswer} />
+          </div>
         </div>
       </div>
     );
