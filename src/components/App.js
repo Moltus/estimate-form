@@ -40,6 +40,7 @@ class App extends React.Component {
       <div className="estimate-form">
         <FormDisplay
           currentStep={this.state.currentStep}
+          history={this.state.answers}
           onButtonClick={this.getNextStep}
           getBack={this.getPreviousStep}
           validate={this.validateForm}

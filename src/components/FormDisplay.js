@@ -4,6 +4,7 @@ import FormData from "./FormData";
 import Icons from "./Icons";
 import ButtonList from "./ButtonList";
 import ProgressGauge from "./ProgressGauge";
+import History from "./History";
 
 class Form extends React.Component {
   state = { question: "", subQuestion: "", choices: [], icon: "" };
@@ -81,6 +82,7 @@ class Form extends React.Component {
           onBackClick={this.onBackClick}
           currentStep={this.props.currentStep}
         />
+        <History history={this.props.history} />
         <div id="form-container" className={"form-container " + this.animation}>
           <Icons iconName={this.state.icon} />
           <h3 className="question">{this.state.question}</h3>
