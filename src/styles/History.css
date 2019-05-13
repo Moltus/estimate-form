@@ -6,6 +6,7 @@
   flex-direction: column;
 }
 .history-question {
+  cursor: pointer;
   margin-top: 0;
   font-size: 12px;
   color: #70B0FF;

@@ -9,6 +9,7 @@ import History from "./History";
 class Form extends React.Component {
   state = { question: "", subQuestion: "", choices: [], icon: "" };
   animation = "";
+  maxSteps = Object.keys(FormData).length;
 
   componentDidMount() {
     this.getNextStep();
@@ -21,6 +22,15 @@ class Form extends React.Component {
     this.animation = "slide-left-in";
     this.getStepData();
   }
+
+  onClickHistory = step => {
+    this.props.onClickHistory(step);
+    this.animation = "slide-right-out";
+    setTimeout(() => {
+      this.getPreviousStep();
+    }, 500);
+  };
+
   getStepData() {
     const data = FormData["step" + this.props.currentStep];
     this.setState({
@@ -30,7 +40,6 @@ class Form extends React.Component {
       choices: data.choices,
       icon: data.icon
     });
-    console.log(this.state);
   }
 
   onBackClick = () => {
@@ -42,7 +51,7 @@ class Form extends React.Component {
   };
 
   getAnswer = choice => {
-    if (this.props.currentStep !== 7) {
+    if (this.props.currentStep !== this.maxSteps) {
       this.props.onButtonClick(choice);
       this.animation = "slide-left-out";
       setTimeout(() => {
@@ -84,14 +93,20 @@ class Form extends React.Component {
               onBackClick={this.onBackClick}
               currentStep={this.props.currentStep}
             />
-            <History history={this.props.history} />
+            <History
+              history={this.props.history}
+              onClickedItem={this.onClickHistory}
+            />
           </div>
           <div className={"questions-container " + this.animation}>
             <Icons iconName={this.state.icon} />
             <h3 className="question">{this.state.question}</h3>
             {this.getSubQuestion()}
             {this.getInputMail()}
-            <ButtonList choices={this.state.choices} getAnswer={this.getAnswer} />
+            <ButtonList
+              choices={this.state.choices}
+              getAnswer={this.getAnswer}
+            />
           </div>
         </div>
       </div>

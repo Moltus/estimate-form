@@ -8,6 +8,15 @@ class App extends React.Component {
     email: ""
   };
 
+  goToStep = step => {
+    let updatedAnswers = [...this.state.answers];
+    updatedAnswers.splice(step, this.state.currentStep - step + 1);
+    this.setState({
+      currentStep: step + 1,
+      answers: updatedAnswers
+    });
+  };
+
   getPreviousStep = () => {
     if (this.state.currentStep !== 1) {
       let updatedAnswers = [...this.state.answers];
@@ -20,7 +29,6 @@ class App extends React.Component {
   };
 
   getNextStep = choice => {
-    console.log(choice);
     this.setState({
       currentStep: this.state.currentStep + 1,
       answers: [...this.state.answers, choice]
@@ -31,16 +39,15 @@ class App extends React.Component {
     this.setState({
       email: email
     });
-    console.log(this.state);
   };
 
   render() {
-    console.log(this.state);
     return (
       <div className="estimate-form">
         <FormDisplay
           currentStep={this.state.currentStep}
           history={this.state.answers}
+          onClickHistory={this.goToStep}
           onButtonClick={this.getNextStep}
           getBack={this.getPreviousStep}
           validate={this.validateForm}
