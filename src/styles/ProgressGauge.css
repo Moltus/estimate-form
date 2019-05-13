@@ -10,11 +10,6 @@
   margin: 20px;
 }
 
-.circular-gauge {
-  top: 10px;
-  left: 20px;
-}
-
 .circular-gauge__outline {
   stroke-width: 2px;
   stroke: #436A99;
@@ -58,7 +53,11 @@
   }
 }
 
+
 @media all and (min-width: 1300px) {
+  .progress-container {
+    margin-bottom: 30px;
+  }
 
   .circular-gauge {
     top: 100px;
