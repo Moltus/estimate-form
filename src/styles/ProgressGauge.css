@@ -1,13 +1,16 @@
+.progress-container {
+  max-width: 1000px;
+  z-index: 5;
+  margin: 0 auto;
+  display: flex;
+}
+
 .progress {
   position: relative;
-  /* max-width: 1000px; */
-  z-index: 5;
-  /* height: 100px; */
-  /* margin: 0 auto; */
+  margin: 20px;
 }
 
 .circular-gauge {
-  position: absolute;
   top: 10px;
   left: 20px;
 }
@@ -30,8 +33,8 @@
 
 .back-button {
   position: absolute;
-  top: 10px;
-  left: 20px;
+  top: 0;
+  left: 0;
   padding: 9px 10px;
   cursor: pointer;
   outline: none;
@@ -46,19 +49,17 @@
 .back-button__arrow {
   fill: #fff;
 }
-
-.back-button:hover .back-button__circle {
-  stroke: #FFC357;
-}
-.back-button:hover .back-button__arrow {
-  fill: #FFC357;
+@media all and (min-width: 780px) {
+  .back-button:hover .back-button__circle {
+    stroke: #FFC357;
+  }
+  .back-button:hover .back-button__arrow {
+    fill: #FFC357;
+  }
 }
 
 @media all and (min-width: 1300px) {
 
-  .back-button {
-    top: 100px;
-  }
   .circular-gauge {
     top: 100px;
   }
