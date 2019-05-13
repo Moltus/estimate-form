@@ -67,7 +67,7 @@ class ProgressGauge extends React.Component {
     return (
       <div className="progress">
         {this.circularGauge()}
-        {this.backButton()};
+        {this.backButton()}
       </div>
     );
   }

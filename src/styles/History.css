@@ -1,6 +1,6 @@
 .history-container {
   position: relative;
-  top: 8px;
+  top: 10px;
   left: 120px;
   max-width: 1000px;
   margin: 0 auto;
@@ -22,6 +22,16 @@
 }
 
 @media all and (min-width: 720px) {
+  .history {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* grid-gap: 12px; */
+    grid-column-gap: 50px;
+    grid-row-gap: 10px;
+  }
+}
+
+@media all and (min-width: 1300px) {
 
   .history-container {
     top: 78px;
@@ -30,13 +40,5 @@
 
   .history-question {
     font-size: 14px;
-  }
-
-  .history {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    /* grid-gap: 12px; */
-    grid-column-gap: 50px;
-    grid-row-gap: 10px;
   }
 }

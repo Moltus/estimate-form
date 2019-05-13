@@ -8,7 +8,7 @@
 
 .circular-gauge {
   position: absolute;
-  top: 30px;
+  top: 10px;
   left: 20px;
 }
 
@@ -30,7 +30,7 @@
 
 .back-button {
   position: absolute;
-  top: 30px;
+  top: 10px;
   left: 20px;
   padding: 9px 10px;
   cursor: pointer;
@@ -54,7 +54,7 @@
   fill: #FFC357;
 }
 
-@media all and (min-width: 720px) {
+@media all and (min-width: 1300px) {
 
   .back-button {
     top: 100px;
