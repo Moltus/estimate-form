@@ -23,14 +23,7 @@ class Form extends React.Component {
     this.getStepData();
   }
 
-  onClickHistory = step => {
-    this.props.onClickHistory(step);
-    this.animation = "slide-right-out";
-    setTimeout(() => {
-      this.getPreviousStep();
-    }, 500);
-  };
-
+  // gets data from FormData.js obj for current step
   getStepData() {
     const data = FormData["step" + this.props.currentStep];
     this.setState({
@@ -42,6 +35,16 @@ class Form extends React.Component {
     });
   }
 
+  // when user click history item
+  onClickHistory = step => {
+    this.props.onClickHistory(step);
+    this.animation = "slide-right-out";
+    setTimeout(() => {
+      this.getPreviousStep();
+    }, 500);
+  };
+
+  // when user click on back button
   onBackClick = () => {
     this.props.getBack();
     this.animation = "slide-right-out";
@@ -50,6 +53,7 @@ class Form extends React.Component {
     }, 500);
   };
 
+  // After an answer is chosen sets animation for sliding left and delay next form question for .5s
   getAnswer = choice => {
     if (this.props.currentStep !== this.maxSteps) {
       this.props.onButtonClick(choice);
@@ -58,17 +62,18 @@ class Form extends React.Component {
         this.getNextStep();
       }, 500);
     } else {
-      console.log("questionnaire terminé !");
       this.props.validate(this.state.input);
     }
   };
 
+  // checks whether step has some additional info for the question
   getSubQuestion = () => {
     if (this.state.subQuestion !== "") {
       return <h4 className="sub-question">{this.state.subQuestion}</h4>;
     }
   };
 
+  // for last step, and form validation
   getInputMail = () => {
     if (this.state.input !== undefined) {
       return (

@@ -2,10 +2,12 @@ import "../styles/ButtonList.css";
 import React from "react";
 
 class ButtonList extends React.Component {
+  // pass on inputed choice to App through FormDisplay
   getAnswer = (event, button) => {
     this.props.getAnswer(button);
   };
 
+  // additional classes for styling when one or >4 buttons
   getButtons() {
     let containerClass = "buttons-container";
 

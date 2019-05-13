@@ -2,6 +2,7 @@ import React from "react";
 import "../styles/ProgressGauge.css";
 
 class ProgressGauge extends React.Component {
+  // circular progress gauge with outline and overlay
   circularGauge = () => {
     return (
       <svg

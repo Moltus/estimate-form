@@ -8,6 +8,7 @@ class App extends React.Component {
     email: ""
   };
 
+  // when user click on history item, to get back n steps ago
   goToStep = step => {
     let updatedAnswers = [...this.state.answers];
     updatedAnswers.splice(step, this.state.currentStep - step + 1);
@@ -17,6 +18,7 @@ class App extends React.Component {
     });
   };
 
+  // when user click on back button, for 1 step before
   getPreviousStep = () => {
     if (this.state.currentStep !== 1) {
       let updatedAnswers = [...this.state.answers];
@@ -28,6 +30,7 @@ class App extends React.Component {
     }
   };
 
+  // after an choice button is clicked, get further in form
   getNextStep = choice => {
     this.setState({
       currentStep: this.state.currentStep + 1,
@@ -35,6 +38,7 @@ class App extends React.Component {
     });
   };
 
+  // last step to validate form
   validateForm = email => {
     this.setState({
       email: email

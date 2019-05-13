@@ -6,7 +6,8 @@
   max-width: 1000px;
 }
 
-/* When number of buttons is > 4, min-width is 150. Especially useful for mobile display where they wouldnt fit on 1 screen */
+/* When number of buttons is > 4, min-width is 100px. Especially useful for mobile display where they wouldnt fit on 1 screen */
+
 .buttons-container.small-buttons {
   grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
   grid-auto-rows: 55px;
