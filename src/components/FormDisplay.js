@@ -8,8 +8,9 @@ import History from "./History";
 
 class Form extends React.Component {
   state = { question: "", subQuestion: "", choices: [], icon: "" };
-  animation = "";
-  maxSteps = Object.keys(FormData).length;
+  animation = ""; // to define class for animation (left, right, in, out...)
+  stepTransitionSpeed = 500; // animation speed in ms for sliding in or out
+  maxSteps = Object.keys(FormData).length; // how many screens for the form
 
   componentDidMount() {
     this.getNextStep();
@@ -41,7 +42,7 @@ class Form extends React.Component {
     this.animation = "slide-right-out";
     setTimeout(() => {
       this.getPreviousStep();
-    }, 500);
+    }, this.stepTransitionSpeed);
   };
 
   // when user click on back button
@@ -50,7 +51,7 @@ class Form extends React.Component {
     this.animation = "slide-right-out";
     setTimeout(() => {
       this.getPreviousStep();
-    }, 500);
+    }, this.stepTransitionSpeed);
   };
 
   // After an answer is chosen sets animation for sliding left and delay next form question for .5s
@@ -60,7 +61,7 @@ class Form extends React.Component {
       this.animation = "slide-left-out";
       setTimeout(() => {
         this.getNextStep();
-      }, 500);
+      }, this.stepTransitionSpeed);
     } else {
       this.props.validate(this.state.input);
     }
