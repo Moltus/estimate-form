@@ -1,4 +1,5 @@
 import React from "react";
+import Background from "./Background";
 import FormDisplay from "./FormDisplay";
 
 class App extends React.Component {
@@ -48,6 +49,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="estimate-form">
+        <Background currentStep={this.state.currentStep} />
         <FormDisplay
           currentStep={this.state.currentStep}
           history={this.state.answers}

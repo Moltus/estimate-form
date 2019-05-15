@@ -1,0 +1,23 @@
+.wavy-bg {
+  position: absolute;
+  bottom: 0;
+}
+
+.background {
+  width: 100vw;
+  height: 55vh;
+  position: absolute;
+  bottom: 0;
+  background: url(../images/pattern.svg);
+  background-size: 450px;
+  background-position-x: 0;
+  transition: background-position-x 1s;
+
+}
+
+@media all and (min-width: 1200px) {
+  .background {
+    height: 70vh;
+    clip-path: polygon(0 110%, 100% 60%, 100% 0, 0 50%);
+  }
+}
