@@ -12,7 +12,6 @@
   background-size: 450px;
   background-position-x: 0;
   transition: background-position-x 1s ease-out;
-
 }
 
 @media all and (min-width: 1200px) {

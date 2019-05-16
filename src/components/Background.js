@@ -7,7 +7,9 @@ class WavyBackground extends React.Component {
     return (
       <div
         className="background"
-        style={{ backgroundPositionX: this.props.currentStep * -100 + "px" }}
+        style={{
+          backgroundPositionX: this.props.currentStep * -100 + "px"
+        }}
       />
     );
   }
