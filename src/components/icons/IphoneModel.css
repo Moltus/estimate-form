@@ -1,0 +1,33 @@
+.iphone-model__phone {
+  fill: #142c49;
+  stroke: #70b0ff;
+  stroke-miterlimit: 10;
+  stroke-width: 0.25px;
+}
+
+#iphone1 .screen, #iphone1 .button, #iphone1 .speaker {
+  animation: turnOn 6s infinite;
+}
+#iphone2 .screen, #iphone2 .button, #iphone2 .speaker {
+  animation: turnOn 6s 1s infinite;
+}
+#iphone3 .screen, #iphone3 .button, #iphone3 .speaker {
+  animation: turnOn 6s 2s infinite;
+}
+#iphone4 .screen, #iphone4 .button, #iphone4 .speaker {
+  animation: turnOn 6s 3s infinite;
+}
+#iphone5 .screen, #iphone5 .button, #iphone5 .speaker {
+  animation: turnOn 6s 4s infinite;
+}
+#iphone6 .screen, #iphone6 .button, #iphone6 .speaker {
+  animation: turnOn 6s 5s infinite;
+}
+
+@keyframes turnOn {
+  0% { fill: #142c49; stroke: #70b0ff; }
+  10% { fill: #b37c19; stroke: #ffc357; }
+  60% { fill: #142c49; stroke: #70b0ff; }
+  100% { fill: #142c49; stroke: #70b0ff; }
+}
+

@@ -105,7 +105,7 @@ class Form extends React.Component {
             />
           </div>
           <div className={"questions-container " + this.animation}>
-            <Icons iconName={this.state.icon} />
+            <Icons iconTag={this.state.icon} />
             <h3 className="question">{this.state.question}</h3>
             {this.getSubQuestion()}
             {this.getInputMail()}

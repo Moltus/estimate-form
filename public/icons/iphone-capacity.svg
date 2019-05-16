@@ -26,14 +26,14 @@
   </defs>
   <title>iphone-capacity</title>
   <g id="background">
-    <rect class="cls-1" y="0.13" width="27.44" height="27.44"/>
+    <rect class="cls-1" y="0.09" width="27.44" height="27.44"/>
   </g>
   <g id="iphone">
-    <path class="cls-2" d="M7.1,20.5V6.84A1.08,1.08,0,0,1,8.19,5.76h9.54V2a2,2,0,0,0-2-2H4.19a2,2,0,0,0-2,2V25.44a2,2,0,0,0,2,2H15.74a2,2,0,0,0,2-2V21.58H8.19A1.09,1.09,0,0,1,7.1,20.5Z" transform="translate(0 0.13)"/>
+    <path class="cls-2" d="M10.56,20.53V6.87a1.08,1.08,0,0,1,1.09-1.08h9.54V2a2,2,0,0,0-2-2H7.65a2,2,0,0,0-2,2V25.48a2,2,0,0,0,2,2H19.19a2,2,0,0,0,2-2V21.61H11.65A1.08,1.08,0,0,1,10.56,20.53Z" transform="translate(0 0.09)"/>
   </g>
   <g id="Layer_3" data-name="Layer 3">
-    <rect class="cls-3" x="8.45" y="7.25" width="12.52" height="3.54" rx="0.66"/>
-    <path class="cls-4" d="M18.67,15.49l-9.54.06a.66.66,0,0,1-.66-.65V12.67A.67.67,0,0,1,9.13,12L18.67,12a.66.66,0,0,1,.66.66v2.23A.66.66,0,0,1,18.67,15.49Z" transform="translate(0 0.13)"/>
-    <rect class="cls-3" x="8.47" y="16.96" width="9.26" height="3.54" rx="0.66"/>
+    <rect class="cls-3" x="11.91" y="7.25" width="12.52" height="3.54" rx="0.66"/>
+    <path class="cls-4" d="M22.13,15.52l-9.54.06a.66.66,0,0,1-.66-.65V12.7a.67.67,0,0,1,.66-.66L22.13,12a.66.66,0,0,1,.66.66v2.23A.66.66,0,0,1,22.13,15.52Z" transform="translate(0 0.09)"/>
+    <rect class="cls-3" x="11.93" y="16.96" width="9.26" height="3.54" rx="0.66"/>
   </g>
 </svg>

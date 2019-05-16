@@ -17,7 +17,7 @@ const FormData = {
       { id: "1l", button: "XS Max", info: "" },
       { id: "1m", button: "XR", info: "" }
     ],
-    icon: "iphone-model"
+    icon: "IphoneModel"
   },
   step2: {
     id: 2,
@@ -28,7 +28,7 @@ const FormData = {
       { id: "2c", button: "128 Go", info: "" },
       { id: "2d", button: "256 Go", info: "" }
     ],
-    icon: "iphone-capacity"
+    icon: "IphoneCapacity"
   },
   step3: {
     id: 3,
@@ -46,7 +46,7 @@ const FormData = {
         info: "Fonctionne parfaitement, aucun dommage liquide"
       }
     ],
-    icon: "iphone-functional"
+    icon: "IphoneFunctional"
   },
   step4: {
     id: 4,
@@ -65,7 +65,7 @@ const FormData = {
       },
       { id: "4c", button: "Comme neuf", info: "Intact, aucune marque d'usure" }
     ],
-    icon: "iphone-screen"
+    icon: "IphoneScreen"
   },
   step5: {
     id: 5,
@@ -83,7 +83,7 @@ const FormData = {
       },
       { id: "5c", button: "Comme neuve", info: "Intact, aucune marque d'usure" }
     ],
-    icon: "iphone-case"
+    icon: "IphoneCase"
   },
   step6: {
     id: 6,
@@ -91,7 +91,7 @@ const FormData = {
     subQuestion:
       "Il est obligatoire de déconnecter votre compte iCloud avant de nous revendre votre iPhone.",
     choices: [{ id: "6a", button: "C'est compris !", info: "" }],
-    icon: "cloud-disconnect"
+    icon: "IcloudDisconnect"
   },
   step7: {
     id: 7,
@@ -99,7 +99,7 @@ const FormData = {
     subQuestion: "Vous recevrez notre proposition sur cette adresse)",
     input: "steve.wozniak@apple.com",
     choices: [{ id: "7a", button: "Estimer Mon Produit", info: "" }],
-    icon: "mail"
+    icon: "Mail"
   }
 };
 
