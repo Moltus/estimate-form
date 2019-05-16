@@ -6,7 +6,7 @@
 }
 
 .iphone-case__case {
-  animation: iphoneCase 4s linear infinite;
+  animation: iphoneCase 3s linear infinite;
 }
 
 @keyframes iphoneCase {

@@ -8,10 +8,8 @@ import IphoneCase from "./icons/IphoneCase";
 import IcloudDisconnect from "./icons/IcloudDisconnect";
 import Mail from "./icons/Mail";
 
-// const getIconURL = iconTag => {
-//   return `./icons/${iconTag}.svg`;
-// };
 class Icons extends React.Component {
+  // Load icon Components based on 'icon' property in FormData obj passed on in props.iconTag
   components = {
     IphoneModel: IphoneModel,
     IphoneCapacity: IphoneCapacity,
@@ -22,7 +20,6 @@ class Icons extends React.Component {
     Mail: Mail
   };
   render() {
-    // const IconTag = this.props.iconTag || "IphoneModel";
     const TagName = this.components[this.props.iconTag || "IphoneModel"];
     console.log("icon tag is : ", TagName);
     return <TagName />;

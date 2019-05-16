@@ -6,7 +6,7 @@
 }
 
 .iphone-screen__screen {
-  animation: iphoneScreen 4s linear infinite;
+  animation: iphoneScreen 3s linear infinite;
 }
 
 @keyframes iphoneScreen {

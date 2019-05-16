@@ -10,7 +10,7 @@
   stroke: #70b0ff;
   stroke-miterlimit: 10;
   stroke-width: 0.25px;
-  animation: functionalPower 4s linear infinite;
+  animation: functionalPower 3s linear infinite;
 }
 
 @keyframes functionalPower {

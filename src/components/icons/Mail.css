@@ -10,7 +10,7 @@
 }
 
 .mail__inside {
-  animation: mailInside 4s linear infinite;
+  animation: mailInside 3s linear infinite;
 }
 
 @keyframes mailInside {
@@ -20,7 +20,7 @@
 }
 
 .mail__at-sign {
-  animation: mailAtSign 4s linear Infinite;
+  animation: mailAtSign 3s linear Infinite;
 }
 
 @keyframes mailAtSign {
