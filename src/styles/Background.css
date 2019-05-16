@@ -5,13 +5,13 @@
 
 .background {
   width: 100vw;
-  height: 55vh;
+  height: 52vh;
   position: absolute;
   bottom: 0;
   background: url(../images/pattern.svg);
   background-size: 450px;
   background-position-x: 0;
-  transition: background-position-x 1s;
+  transition: background-position-x 1s ease-out;
 
 }
 
