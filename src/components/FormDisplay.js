@@ -79,7 +79,7 @@ class Form extends React.Component {
     if (this.state.input !== undefined) {
       return (
         <input
-          size="22"
+          // size="22"
           className="input"
           type="email"
           placeholder="steve.wozniak@apple.com"

@@ -34,7 +34,8 @@
 
 .button:hover {
   border-color: #FFC357;
-  color: #FFC357;
+  background-image: linear-gradient(to bottom, #b37d1948 0%, #142C49 20%, #142C49 60%,rgb(19, 38, 61) 100%);
+  color: #fff;
 }
 
 .info {

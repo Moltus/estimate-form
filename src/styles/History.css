@@ -5,6 +5,7 @@
   display: flex;
   flex-direction: column;
 }
+
 .history-question {
   cursor: pointer;
   margin-top: 0;
@@ -15,6 +16,10 @@
 
 .history-answer {
   color: #eee;
+}
+
+.history-question:hover {
+  color: #FFC357;
 }
 
 @media all and (min-width: 720px) {
