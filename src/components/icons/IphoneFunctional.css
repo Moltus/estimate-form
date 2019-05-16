@@ -2,14 +2,14 @@
   fill: #142c49;
   stroke: #70b0ff;
   stroke-miterlimit: 10;
-  stroke-width: 0.25px;
+  stroke-width: 0.20px;
 }
 
 .iphone-functional__power {
   fill: #142c49;
   stroke: #70b0ff;
   stroke-miterlimit: 10;
-  stroke-width: 0.25px;
+  stroke-width: 0.20px;
   animation: functionalPower 3s linear infinite;
 }
 

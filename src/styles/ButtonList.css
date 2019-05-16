@@ -21,11 +21,13 @@
 .button {
   cursor: pointer;
   background-color: #142C49;
+  background-image: linear-gradient(to bottom, rgb(32, 60, 95) 0%, #142C49 40%, #142C49 60%,rgb(19, 38, 61) 100%);
+  /* background-image: linear-gradient(to right, #314755 0%, #26a0da 51%, #314755 100%); */
   width: 100%;
   color: #fff;
   font-size: 1.3rem;
   padding: 15px 10px;
-  border: 2px solid #70B0FF;
+  border: 1px solid #70B0FF;
   border-radius: 8px;
   outline: none;
 }
@@ -36,5 +38,6 @@
 }
 
 .info {
-  padding: 0 8px;
+  padding: 0 10px;
+  text-shadow: 0 0 8px #000;
 }
