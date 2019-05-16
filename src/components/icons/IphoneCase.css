@@ -1,17 +1,16 @@
-.cls-1, .cls-3 {
+.iphone-case {
   fill: #142c49;
-}
-
-.cls-2 {
-  fill: #b37c19;
-  stroke: #ffc357;
-}
-
-.cls-2, .cls-3 {
+  stroke: #70b0ff;
   stroke-miterlimit: 10;
   stroke-width: 0.25px;
 }
 
-.cls-3 {
-  stroke: #70b0ff;
+.iphone-case__case {
+  animation: iphoneCase 4s linear infinite;
+}
+
+@keyframes iphoneCase {
+  0% { fill: #b37c19; stroke: #ffc357; }
+  50% { fill: #142c49; stroke: #70b0ff; }
+  100% { fill: #b37c19; stroke: #ffc357; }
 }

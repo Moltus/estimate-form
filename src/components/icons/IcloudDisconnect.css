@@ -1,18 +1,20 @@
-.cls-1 {
+.icloud-disconnect {
   fill: #142c49;
 }
 
-.cls-2 {
-  fill: #436a99;
-}
-
-.cls-3 {
+.icloud-disconnect__cloud {
   fill: #70b0ff;
 }
 
-.cls-4 {
-  fill: #b37c19;
-  stroke: #ffc357;
+.icloud-disconnect__disconnect {
   stroke-miterlimit: 10;
   stroke-width: 0.25px;
+  animation: icloudDisconnect 3s infinite;
 }
+
+@keyframes icloudDisconnect {
+  0% { fill: #b37c19; stroke: #ffc357; }
+  50% { fill: #142c49; stroke: #70b0ff; }
+  100% { fill: #b37c19; stroke: #ffc357; }
+}
+

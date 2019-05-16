@@ -1,22 +1,30 @@
-.cls-1 {
+.mail__outline {
   fill: #142c49;
-}
-
-.cls-2 {
-  fill: none;
   stroke: #436a99;
   stroke-miterlimit: 10;
   stroke-width: 0.25px;
 }
 
-.cls-3 {
+.mail__outside {
   fill: #436a99;
 }
 
-.cls-4 {
-  fill: #b37c19;
+.mail__inside {
+  animation: mailInside 4s linear infinite;
 }
 
-.cls-5 {
-  fill: #ffc357;
+@keyframes mailInside {
+  0% { fill: #b37c19 }
+  50% { fill: #142c49 }
+  100% { fill: #b37c19 }
+}
+
+.mail__at-sign {
+  animation: mailAtSign 4s linear Infinite;
+}
+
+@keyframes mailAtSign {
+  0% { fill: #ffc357 }
+  50% { fill: #436a99 }
+  100% { fill: #ffc357 }
 }
