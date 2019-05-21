@@ -1,9 +1,10 @@
 import "../styles/History.css";
 import React from "react";
-import FormData from "./FormData";
+import FormDataProduct from "./form-data/FormDataProduct";
+import FormDataIPhone from "./form-data/FormDataIPhone";
 
 class History extends React.Component {
-  // passed step information when user click on a previous step in history
+  // passed-on step information when user click on a previous step in history
   onClickedItem = (event, step) => {
     this.props.onClickedItem(step);
   };

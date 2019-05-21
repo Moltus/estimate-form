@@ -21,7 +21,6 @@ class Icons extends React.Component {
   };
   render() {
     const TagName = this.components[this.props.iconTag || "IphoneModel"];
-    console.log("icon tag is : ", TagName);
     return <TagName />;
   }
 }

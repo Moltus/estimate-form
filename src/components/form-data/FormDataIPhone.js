@@ -1,7 +1,7 @@
-const FormData = {
+const FormDataIPhone = {
   step1: {
     id: 1,
-    question: "Quel est le modèle de votre Iphone ?",
+    question: "Quel est le modèle de votre iPhone ?",
     choices: [
       { id: "1a", button: "6", info: "" },
       { id: "1b", button: "6 Plus", info: "" },
@@ -17,7 +17,7 @@ const FormData = {
       { id: "1l", button: "XS Max", info: "" },
       { id: "1m", button: "XR", info: "" }
     ],
-    icon: "IphoneModel"
+    stepIcon: "IphoneModel"
   },
   step2: {
     id: 2,
@@ -28,7 +28,7 @@ const FormData = {
       { id: "2c", button: "128 Go", info: "" },
       { id: "2d", button: "256 Go", info: "" }
     ],
-    icon: "IphoneCapacity"
+    stepIcon: "IphoneCapacity"
   },
   step3: {
     id: 3,
@@ -46,7 +46,7 @@ const FormData = {
         info: "Fonctionne parfaitement, aucun dommage liquide"
       }
     ],
-    icon: "IphoneFunctional"
+    stepIcon: "IphoneFunctional"
   },
   step4: {
     id: 4,
@@ -65,7 +65,7 @@ const FormData = {
       },
       { id: "4c", button: "Comme neuf", info: "Intact, aucune marque d'usure" }
     ],
-    icon: "IphoneScreen"
+    stepIcon: "IphoneScreen"
   },
   step5: {
     id: 5,
@@ -83,7 +83,7 @@ const FormData = {
       },
       { id: "5c", button: "Comme neuve", info: "Intact, aucune marque d'usure" }
     ],
-    icon: "IphoneCase"
+    stepIcon: "IphoneCase"
   },
   step6: {
     id: 6,
@@ -91,7 +91,7 @@ const FormData = {
     subQuestion:
       "Il est obligatoire de déconnecter votre compte iCloud avant de nous revendre votre iPhone.",
     choices: [{ id: "6a", button: "C'est compris !", info: "" }],
-    icon: "IcloudDisconnect"
+    stepIcon: "IcloudDisconnect"
   },
   step7: {
     id: 7,
@@ -99,8 +99,8 @@ const FormData = {
     subQuestion: "Vous recevrez notre proposition sur cette adresse)",
     input: "steve.wozniak@apple.com",
     choices: [{ id: "7a", button: "Estimer Mon Produit", info: "" }],
-    icon: "Mail"
+    stepIcon: "Mail"
   }
 };
 
-export default FormData;
+export default FormDataIPhone;

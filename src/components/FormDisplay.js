@@ -1,6 +1,7 @@
 import "../styles/FormDisplay.css";
 import React from "react";
-import FormData from "./FormData";
+import FormDataProduct from "./form-data/FormDataProduct";
+import FormDataIphone from "./form-data/FormDataIPhone";
 import Icons from "./Icons";
 import ButtonList from "./ButtonList";
 import ProgressGauge from "./ProgressGauge";
@@ -26,13 +27,15 @@ class Form extends React.Component {
 
   // gets data from FormData.js obj for current step
   getStepData() {
+    if (this.props.currentStep === 0) {
+    }
     const data = FormData["step" + this.props.currentStep];
     this.setState({
       question: data.question,
       subQuestion: data.subQuestion ? data.subQuestion : "",
       input: data.input ? "" : undefined,
       choices: data.choices,
-      icon: data.icon
+      icon: data.stepIcon
     });
   }
 
