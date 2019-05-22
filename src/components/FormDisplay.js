@@ -1,21 +1,35 @@
 import "../styles/FormDisplay.css";
 import React from "react";
 import FormDataProduct from "./form-data/FormDataProduct";
-import FormDataIphone from "./form-data/FormDataIPhone";
+import FormDataIPhone from "./form-data/FormDataIPhone";
 import Icons from "./Icons";
 import ButtonList from "./ButtonList";
 import ProgressGauge from "./ProgressGauge";
 import History from "./History";
 
 class Form extends React.Component {
-  state = { question: "", subQuestion: "", choices: [], icon: "" };
+  state = {
+    question: "",
+    subQuestion: "",
+    choices: ["en chargement"],
+    icon: ""
+  };
   animation = ""; // to define class for animation (left, right, in, out...)
   stepTransitionSpeed = 500; // animation speed in ms for sliding in or out
   maxSteps = Object.keys(FormData).length; // how many screens for the form
 
+  forms = {
+    product: FormDataProduct,
+    iphone: FormDataIPhone
+  };
+
   componentDidMount() {
     this.getNextStep();
   }
+
+  // componentDidUpdate() {
+  //   this.getStepData();
+  // }
   getPreviousStep() {
     this.animation = "slide-right-in";
     this.getStepData();
@@ -27,9 +41,13 @@ class Form extends React.Component {
 
   // gets data from FormData.js obj for current step
   getStepData() {
-    if (this.props.currentStep === 0) {
-    }
-    const data = FormData["step" + this.props.currentStep];
+    // if (this.props.currentStep === 0) {
+    // }
+    let form = this.forms[this.props.currentForm || "product"];
+    let data = form["step" + this.props.currentStep];
+    console.log("data", data);
+
+    // const data = FormData["step" + this.props.currentStep];
     this.setState({
       question: data.question,
       subQuestion: data.subQuestion ? data.subQuestion : "",
@@ -37,6 +55,8 @@ class Form extends React.Component {
       choices: data.choices,
       icon: data.stepIcon
     });
+
+    console.log(this.state);
   }
 
   // when user click history item
@@ -103,6 +123,7 @@ class Form extends React.Component {
               currentStep={this.props.currentStep}
             />
             <History
+              currentForm={this.props.currentForm}
               history={this.props.history}
               onClickedItem={this.onClickHistory}
             />

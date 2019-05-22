@@ -4,7 +4,7 @@ import FormDisplay from "./FormDisplay";
 
 class App extends React.Component {
   state = {
-    formData: "Product",
+    formData: "product",
     currentStep: 0,
     answers: [],
     email: ""
@@ -22,7 +22,7 @@ class App extends React.Component {
 
   // when user click on back button, for 1 step before
   getPreviousStep = () => {
-    if (this.state.currentStep > 1) {
+    if (this.state.currentStep > 0) {
       let updatedAnswers = [...this.state.answers];
       updatedAnswers.splice(this.state.answers.length - 1, 1);
       this.setState({
@@ -52,6 +52,7 @@ class App extends React.Component {
       <div className="estimate-form">
         <Background currentStep={this.state.currentStep} />
         <FormDisplay
+          currentForm={this.state.formData}
           currentStep={this.state.currentStep}
           history={this.state.answers}
           onClickHistory={this.goToStep}
